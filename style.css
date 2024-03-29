@@ -1,16 +1,26 @@
 :root {
-    --abuabu: #F1F3FF;
+  --abuabu: #f1f3ff;
 }
 
 /* Reset some default styles */
-body, h1, h2, p, ul, li, nav, section, article, aside, footer {
+body,
+h1,
+h2,
+p,
+ul,
+li,
+nav,
+section,
+article,
+aside,
+footer {
   margin: 0;
   padding: 0;
 }
 
 /* Style the body */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
   padding: 20px;
   background: #f4f4f4;
@@ -18,7 +28,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #F1F3FF;
+  background-color: #f1f3ff;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -29,14 +39,18 @@ header h1 {
 }
 
 /* Navigation Styles */
+.nav {
+  float: right;
+}
+
 nav {
   display: block;
-  background-color: #F1F3FF;
+  background-color: #f1f3ff;
   padding: 20px 20px 20px;
 }
 
 nav a {
-  color: #F1F3FF;
+  color: #f1f3ff;
   text-decoration: none;
   padding: 5px 20px;
   display: inline-block;
@@ -77,14 +91,13 @@ li a:hover {
 }
 
 .register-btn {
-  background-color: #4CAF50; /* Green background for the register button */
+  background-color: #4caf50; /* Green background for the register button */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-
 
 /* Main content Styles */
 main {
@@ -116,15 +129,18 @@ aside {
 
 /* Footer Styles */
 footer {
-  background: #333;
-  color: white;
+  background: none;
+  color: black;
   text-align: center;
   padding: 10px 0;
 }
 
 /* Responsive Styles */
 @media screen and (min-width: 768px) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -156,19 +172,19 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  nav, article, aside {
+  nav,
+  article,
+  aside {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-
-.container {
-  display: flex;
+.container-fluid {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: #F1F3FF; /* Assuming a blue background */
+  background-color: #f1f3ff; /* Assuming a blue background */
 }
 
 .content {
@@ -195,7 +211,6 @@ footer {
   max-width: 1440px;
   height: auto;
 }
-
 
 h1 {
   font-size: 36px; /* Adjust as needed */
@@ -226,7 +241,6 @@ img {
   height: auto;
 }
 
-
 /* content baru */
 
 .container-img {
@@ -248,7 +262,6 @@ img {
   flex-basis: 50%; /* adjust size accordingly */
   padding-left: 20px; /* adjust spacing accordingly */
 }
-
 
 .container-img {
   display: flex;
@@ -293,11 +306,18 @@ img {
 }
 
 .text-section-container td:before {
-  content: '✔';
+  content: "✔";
   position: absolute;
   left: 0;
   color: #007bff; /* Adjust to match the desired checkmark color */
   font-size: 1em; /* Adjust size as needed */
+}
+
+@media (min-width: 769px) {
+  .image-section-container img {
+    max-width: 100%; /* Full width of its container */
+    height: auto;
+  }
 }
 
 /* content baru */
@@ -330,7 +350,7 @@ img {
 
 .card {
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   width: 250px;
   margin: 10px;
@@ -363,60 +383,56 @@ img {
   color: #666;
   font-size: 14px;
   line-height: 1.6;
-  
 }
 
 /* Add additional media queries if needed for responsiveness */
 @media (max-width: 768px) {
   .card-container {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
 /* content baru */
 
 .cta-container {
-    background-color: #004aad;
-    color: white;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    width: 80%;
-    max-width: 1000px; /* Adjust the max-width as needed */
-    margin: 50px auto; /* This centers the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+  background-color: #004aad;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 1000px; /* Adjust the max-width as needed */
+  margin: 50px auto; /* This centers the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
 }
 
 .cta-container h1 {
-    margin-bottom: 20px;
-    font-size: 2em; /* Adjust size as needed */
+  margin-bottom: 20px;
+  font-size: 2em; /* Adjust size as needed */
 }
 
 .cta-container p {
-    margin-bottom: 30px;
-    font-size: 1em; /* Adjust size as needed */
-    color: white;
+  margin-bottom: 30px;
+  font-size: 1em; /* Adjust size as needed */
+  color: white;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1em; /* Adjust size as needed */
-    color: #004aad;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 1em; /* Adjust size as needed */
+  color: #004aad;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e7e7e7; /* Color changes on hover */
+  background-color: #e7e7e7; /* Color changes on hover */
 }
 
-
 /* carousel */
-
-
 
 .testimonial-container {
   text-align: center;
@@ -431,13 +447,12 @@ h2 {
 }
 
 .rating {
-  color: #FFD700; /* gold color for stars */
+  color: #ffd700; /* gold color for stars */
 }
 
 .star {
   font-size: 20px;
 }
-
 
 .item {
   background-color: #f9f9f9;
@@ -448,7 +463,6 @@ h2 {
   text-align: left;
   width: 459px;
   height: 270px;
- 
 }
 
 blockquote p {
@@ -488,74 +502,51 @@ blockquote footer {
   background-color: green;
 }
 
+/* Accordion */
+.container {
+  width: 80%;
+  margin: 50px auto; /* This centers the container */
+}
 
 /* footer */
 
-
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
-  margin: 60px;
-  background-color: #f1f1f1;
-  font-size: 14px;
-  color: #333;
+  background-color: #f8f9fa; /* Light grey background */
+  color: black;
+  border-top: 1px solid #ddd; /* Add a top border */
 }
 
-.footer-section {
-  display: flex;
-  flex-direction: column;
+.footer p,
+.footer h5 {
+  padding-bottom: 15px; /* Spacing under the text */
 }
 
-.footer .address p,
-.footer .services a,
-.footer .social a {
-  margin-bottom: 10px;
-  color: #333;
-  text-decoration: none;
+.footer a {
+  color: black;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.footer .social a {
-  display: inline-block; /* Aligns social icons horizontally */
+.footer a:hover {
+  color: #555; /* Darker grey on hover */
 }
 
-.footer .social img {
-  width: 24px; /* Adjust as needed */
-  height: 24px; /* Adjust as needed */
-  margin-right: 8px;
+.list-inline-item {
+  padding: 0 10px;
 }
 
-/* Clear margin for the last element */
-.footer .address p:last-child,
-.footer .services a:last-child,
-.footer .social a:last-child {
-  margin-bottom: 0;
-}
-
-/* Copyright styles */
-.footer .copyright {
-  margin-left: auto; /* Pushes to the right */
-  text-align: right;
+.list-inline-item i {
+  font-size: 20px; /* Adjust icon size */
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer {
-      flex-direction: column;
-      align-items: flex-start;
+@media (max-width: 991px) {
+  .footer .col-md-6 {
+    /* Ensure full width on medium devices */
+    flex: 0 0 100%;
+    max-width: 100%;
   }
-
-  .footer-section {
-      margin-bottom: 20px;
-  }
-
-  .footer .social a {
-      margin-right: 10px;
-  }
-
-  .footer .social img {
-      width: 20px;
-      height: 20px;
+  .footer .text-center {
+    /* Center text on medium devices */
+    text-align: center !important;
   }
 }
